@@ -7,7 +7,11 @@ class Project
   end
   
   def add_backer(backer)
-    if backer.instance_of?
+    if backer.instance_of? Backer
+      self.backers << backer
+      @backers << self
+    end
+  end
 
 
 end 
